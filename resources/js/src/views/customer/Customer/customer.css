@@ -1,0 +1,11 @@
+.form-card{
+    margin:10px 5px;
+}
+.form-card.card .card-body{
+    padding:1rem;
+    font-size:14px;
+}
+.form-card.card .card-title{
+    font-size:16px;
+    font-weight:600;
+}

@@ -1,0 +1,9 @@
+.app-toast.toast{
+    position: fixed;
+    top: 150px;
+    z-index: 1500;
+    left: 40%;    
+    max-width: 300px;
+    width: 100%;
+    font-weight: 600;
+}

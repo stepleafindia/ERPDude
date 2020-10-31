@@ -1,0 +1,33 @@
+.suggestion-container{
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 100%;
+    top: 100%;
+    z-index: 100;
+    border:solid 1px #ddd;
+    max-height: 40vh;
+    overflow: auto;
+}
+.suggestion-container .suggestions{    
+    list-style: none;
+    overflow: auto;
+    padding: 5px;    
+}
+.suggestion-container .suggestions li{
+    padding:5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.suggestion-container .suggestions li:not(.empty){
+    cursor:pointer;
+}
+.suggestion-container .suggestions li.active{
+    background-color: #6495ed;
+    white-space: break-spaces;
+    color:#fff;    
+}
+.suggestion-container .suggestions li.empty{
+    text-align:center;
+    color:#848484;
+}

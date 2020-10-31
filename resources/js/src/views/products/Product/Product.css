@@ -1,0 +1,16 @@
+.form-card{
+    margin:10px 5px;
+}
+.form-card.card .card-body{
+    padding:1rem;
+    font-size:14px;
+}
+.form-card.card .card-title{
+    font-size:16px;
+    font-weight:600;
+}
+.preview-image{
+    width:100%;
+    border: solid 1px #000;
+    margin: 5px 0px;
+}

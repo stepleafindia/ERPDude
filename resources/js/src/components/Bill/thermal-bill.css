@@ -1,0 +1,108 @@
+#thermalBill{
+    visibility:hidden;
+    display:none;
+}  
+
+@media print { 
+    @page{ 
+        size: auto;  
+        margin: 0mm;
+        padding:0mm; 
+    }   
+    body * {
+        visibility: hidden; 
+    }
+    #thermalBill, #thermalBill *{
+        visibility: visible;
+        color:#000;     
+    }
+    #thermalBill {
+        display:block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:100%;
+    } 
+
+    .bill-page{
+        width:100%;
+        display:block;
+        font-size:1rem;
+    }
+    .page-header{
+        text-align:center;
+        font-size: 1.5rem;
+    }
+    .bill-page .bill-address, 
+    .bill-page .bill-contact-no, 
+    .bill-page .bill-gst-no{
+        text-align:center;
+        max-width:50%;
+        margin: auto;
+    }
+    .bill-page .header-row{
+        border-top:dashed 2px #000;   
+        height:3px;
+        border-bottom:dashed 2px #000;
+    }
+    .bill-page .bill-summary-table tfoot{
+        margin:10px 5px;
+    }
+    .bill-page .bill-body{
+        padding:10px;
+    }
+    
+    .bill-page .bill-header-table th:nth-child(1){
+        text-align: left;
+        padding:10px;
+    }
+    .bill-page .bill-header-table th:nth-child(2){
+        text-align: right;
+        padding:.8rem;
+    }
+    
+    .bill-page .bill-summary-table{
+        width:100%;
+    }
+    .bill-page .bill-summary-table tr,
+    .bill-page .bill-summary-table td,
+    .bill-page .bill-summary-table th{
+        border:none;  
+        width:25%;  
+    }
+    .bill-page .bill-header-table th,
+    .bill-page .bill-header-table td{
+        border:none;  
+        width:25%;  
+    }
+    .bill-page .bill-footer-table th,
+    .bill-page .bill-footer-table td{
+        border:none;  
+        width:25%;  
+    }
+    
+    .bill-page .bill-summary-table thead  tr{
+        border-bottom:dashed 1px #000;  
+    }
+    .bill-page .bill-summary-table thead th{
+        text-align:left;
+        padding:10px 0px;
+    } 
+    .bill-page table  tr.bordered-row{
+        border-top:dashed 1px #000;  
+    }
+    .bill-page table tr.bordered-bottom{
+        border-bottom:dashed 1px #000;  
+    }
+    .bill-page table  tr.bordered-row th,
+    .bill-page table tr.bordered-row td{
+        padding:10px 0px;
+    }
+    .bill-page table  .quoted-text th{
+        text-align:center;
+        padding:5px;
+    }
+    .bill-page .lg-font{
+        font-size:1.2rem;
+    }  
+}

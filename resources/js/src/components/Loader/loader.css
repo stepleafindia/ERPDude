@@ -1,0 +1,13 @@
+.loader-container{
+    width:100%;
+    height:100%;
+    display:flex;
+    position:fixed;  
+    background-color: #91ccfb8c;
+    z-index: 3000;
+    justify-content: center;
+    align-items: center;
+}
+.loader-container .loader-image{
+    width:100px;
+}

@@ -1,0 +1,198 @@
+#a4Bill{
+    visibility:visible;
+    display:block;
+}  
+
+/*
+@media print {
+    @page{ 
+        size: auto;  
+        margin: 0mm;
+        padding:0mm; 
+    }   
+    body * {
+        visibility: hidden; 
+    }
+    #a4Bill, #a4Bill *{
+        visibility: visible;
+        color:#000;     
+    }
+    #a4Bill {
+        display:block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width:100%;
+    } 
+*/
+    .bill-page-a4{
+        width:100%;
+        display:block;
+        font-size:.8rem;
+    }
+    .bill-page-a4 .bill-header-row td{
+        border:solid 1px #000;
+        width:50%;
+    }
+    .bill-page-a4 .no-pad{
+        padding:0px;
+    }
+    .bill-page-a4 .no-pad .table-data tr{
+        border-bottom:solid 1px #000;
+    }
+    .bill-page-a4 .no-pad .table-data td{
+        border:none;
+    }
+    .bill-page-a4 .bill-table .company-address-col{
+        display:flex;
+        width:100%;
+    }
+    .bill-page-a4 .bill-table .buyer-address-col{
+        border-top:solid 1px #000;
+        min-height: 100px;
+    }
+    .bill-page-a4 .bill-table .company-address-col .company-icon{
+        display:inline-block;
+    }
+    .bill-page-a4 .bill-table .company-address-col .company-icon img{
+        max-width:120px;
+    }
+    .bill-page-a4 .bill-table .company-address-col .company-address{
+        display:inline-block;
+        padding:10px;
+    }
+    .bill-page-a4 .bill-table .company-address-col h2{
+        font-size:1rem; 
+        font-weight:600;
+    }
+    .bill-page-a4 .bill-address, 
+    .bill-page-a4 .bill-contact-no, 
+    .bill-page-a4 .bill-email,
+    .bill-page-a4 .bill-gst-no{
+        text-align:left;  
+        font-size:.8rem; 
+        margin:0px; 
+    }
+
+    .bill-page-a4 .page-header{
+        text-align:center;
+        font-size: 1.5rem;
+    }
+   
+    .bill-page-a4 .header-row{
+        border-top:dashed 2px #000;   
+        height:3px;
+        border-bottom:dashed 2px #000;
+    }
+    .bill-page-a4 .bill-summary-table tfoot{
+        margin:10px 5px;
+    }
+    .bill-page-a4 .bill-body{
+        padding:10px;
+    }
+    
+    .bill-page-a4 .bill-header-table th:nth-child(1){
+        text-align: left;
+        padding:10px;
+    }
+    .bill-page-a4 .bill-header-table th:nth-child(2){
+        text-align: right;
+        padding:.8rem;
+    }
+    
+    .bill-page-a4 .bill-summary-table{
+        width:100%;
+    }
+    .bill-page-a4 .bill-summary-table tr,
+    .bill-page-a4 .bill-summary-table td,
+    .bill-page-a4 .bill-summary-table th{
+        border:none;  
+        width:25%;  
+    }
+    .bill-page-a4 .bill-header-table th,
+    .bill-page-a4 .bill-header-table td{
+        border:none;  
+        width:25%;  
+    }
+    .bill-page-a4 .bill-footer-table th,
+    .bill-page-a4 .bill-footer-table td{
+        border:none;  
+        width:25%;  
+    }
+    
+    .bill-page-a4 .bill-summary-table thead  tr{
+        border-bottom:dashed 1px #000;  
+    }
+    .bill-page-a4 .bill-summary-table thead th{
+        text-align:left;
+        padding:10px 0px;
+    } 
+    .bill-page-a4 table  tr.bordered-row{
+        border-top:solid 1px #000;  
+    }
+    .bill-page-a4 table tr.bordered-bottom{
+        border-bottom:dashed 1px #000;  
+    }
+    .bill-page-a4 .buyer-address-col h2{
+        font-size:1rem;
+        font-weight:600;
+    }
+    .bill-page-a4 .buyer-address-col p{
+        margin:0px;
+    }
+
+    .bill-page-a4 table  tr.bordered-row th,
+    .bill-page-a4 table tr.bordered-row td{
+        padding:5px;
+    }
+    .bill-page-a4 table  .quoted-text th{
+        text-align:center;
+        padding:5px;
+    }
+    .bill-page-a4 .lg-font{
+        font-size:1.2rem;
+    } 
+    .bill-page-a4 .bill-a4-items td{
+        padding:0px;
+    }
+    .bill-page-a4 .bill-a4-items .items-list-tbl td,
+    .bill-page-a4 .bill-a4-items .items-list-tbl th{     
+        padding:5px;
+    }
+    .bill-page-a4 .bill-a4-items .items-list-tbl td,
+    .bill-page-a4 .bill-a4-items .items-list-tbl th{
+        border:solid 1px #000;
+    }
+    .bill-page-a4 .bill-a4-items .items-list-tbl thead th{
+        text-align:center;
+        border-top:none;
+    }    
+    .bill-page-a4 .bill-a4-items .items-list-tbl tbody td{
+        border-top:none;
+        border-bottom:none;
+    }
+    .bill-page-a4 .bill-a4-items .items-list-tbl tfoot th{
+        border-top:none;
+        border-bottom:none;
+        text-align:right;
+    }
+
+    .bill-page-a4 .amount-in-words-row .label-text{      
+        display:block;
+    }
+    .bill-page-a4 .amount-in-words-row .label-bold{
+        font-weight:600;
+        font-size:1rem;
+    }
+
+    .bill-page-a4 .items-tax-table table thead th{
+        border:solid 1px #000;
+        border-bottom:solid 1px #000;
+        padding:0px;
+    }   
+    .bill-page-a4 .items-tax-table .tax-head-tbl td{       
+        text-align:center
+    }
+/* 
+} 
+*/

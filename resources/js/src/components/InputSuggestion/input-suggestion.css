@@ -1,0 +1,36 @@
+.custom-input-suggestion-container{
+    position: absolute;
+    background-color: #f0f0f0;
+    width: 100%;
+    top: 100%;
+    z-index: 100;
+    border:solid 1px #ddd;
+    max-height: 40vh;
+    overflow: auto;   
+}
+
+.custom-input-suggestion-container .input-suggestions{
+    list-style: none;
+    overflow: auto;
+    padding: 5px;    
+}
+
+.custom-input-suggestion-container .input-suggestions li{
+    padding:5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#000; 
+}
+.custom-input-suggestion-container .input-suggestions li.active{
+    background-color: #6495ed;
+    white-space: break-spaces;
+    color:#fff;    
+}
+.custom-input-suggestion-container .input-suggestions li:not(.empty){
+    cursor:pointer;
+}
+.custom-input-suggestion-container .input-suggestions li.empty{
+    text-align:center;
+    color:#848484;
+}
